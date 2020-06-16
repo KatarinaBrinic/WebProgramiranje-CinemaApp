@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmls:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8" />
+        <title> Add cinema </title>
+    </head>
+    <body>
+        <center><h1>Add cinema</h1></center>
+        
+        <center>
+        <form th:action="@{/CinemaDone}">
+			<label for="nameField">Name: </label>
+            <input id="nameField" type="text" 
+			name=" size="25" maxlength="35" 
+			required="required"
+			placeholder="Enter username" 
+			list="Usrna"/>
+			<br/>
+			
+			<label for="addressField">Adress: </label>
+            <input id="adressField" type="text"
+                   name="adresses"
+            />
+            <br/>
+			
+			<label for="phoneField">Phone number: </label>
+            <input id="phoneField" type="text"
+                   name="tel" size="25" maxlength="35"
+                   required="required"
+                   placeholder="Enter phone number"
+                   list="phones"/>
+            <br/>
+			
+			<label for="emailField">E-mail: </label>
+            <input id="emailField" type="text"
+                   name="email" size="25" maxlength="35"
+                   required="required"
+                   placeholder="Unesite email"
+                   list="emails"/>
+            <br/>
+			
+			<label for="menagerField">Manager: </label>
+            <input id="menagerField" type="text"
+                   name="menager" size="25" maxlength="35"
+                   required="required"
+                   placeholder="Enter menager"
+                   list="menagers"/>
+            <br/>
+			
+            
+            <label for="auditoriumField">: </label>
+            <input id="auditoriumField" type="text"
+                   name="auditorium"
+            />
+            <br/>
+            
+            <label for="projectionField">Projections: </label>
+            <input id="projectionField" type="text"
+                   name="projection"
+            />
+            <br/>
+			<button onclick="location.href = '/CinemaDone'"> Submit</button>
+        </form></center>
+    </body>
+</html>

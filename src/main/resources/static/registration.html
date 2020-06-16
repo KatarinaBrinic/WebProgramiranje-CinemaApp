@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmls:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8" />
+        <title> Registration </title>
+    </head>
+    <body>
+        <center><h1>User registration</h1></center>
+        
+        <center>
+        
+        <form th:action="@{/RegistrationInformation}"  method="post">
+			<label for="UsernameField">Username: </label>
+            <input id="UsernameField" type="text" 
+			name="Usrn" size="25" maxlength="35" 
+			required="required"
+			placeholder="Enter username" 
+			list="Usrna"/>
+			<br/>
+			
+			<label for="passField">Password: </label>
+            <input id="passField" type="password"
+                   name="password"
+            />
+            <br/>
+			
+			<label for="nameField">Name: </label>
+            <input id="nameField" type="text"
+                   name="name" size="25" maxlength="35"
+                   required="required"
+                   placeholder="Enter name"
+                   list="name"/>
+            <br/>
+			
+			<label for="lastnameField">Prezime: </label>
+            <input id="lastnameField" type="text"
+                   name="lastname" size="25" maxlength="35"
+                   required="required"
+                   placeholder=""
+                   list="lastnames"/>
+            <br/>
+			
+			<label for="phonelField">Phone number: </label>
+            <input id="phoneField" type="text"
+                   name="phone" size="25" maxlength="35"
+                   required="required"
+                   placeholder="Enter phone number"
+                   list="phones"/>
+            <br/>
+			
+            
+            <label for="emailField">E-mail: </label>
+            <input id="emailField" type="email"
+                   name="email"
+            />
+            <br/>
+          
+            <label for="dateField">Date of birth: </label>
+            <input id="dateField" type="date"
+                   name="date"
+            />
+            <br/>
+	
+			
+            <fieldset>
+              
+                Role:<br/>
+                <label for="male">User</label>
+                <input id="male" type="radio"
+                       name="gender" value="m" checked="checked" />
+                <br/>
+				
+                <label for="female">Manager</label>
+                <input id="female" type="radio"
+                       name="gender" value="f" />
+                <br/>
+				
+				<label for="female">Admin</label>
+                <input id="female" type="radio"
+                       name="gender" value="f" />
+                <br/>
+				
+            </fieldset>
+            <br/>
+			
+         
+            <datalist id="names">
+                <option value="Marko"/>
+                <option value="Ksenija"/>
+                <option value="Nikolina"/>
+                <option value="Dragan"/>
+                <option value="Pavle"/>
+            </datalist>
+
+          
+			<button onclick="location.href = '/RegistrationInformation'"> Submit</button>
+        </form></center>
+    </body>
+</html>
+

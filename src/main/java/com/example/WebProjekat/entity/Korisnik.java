@@ -154,6 +154,11 @@ public class Korisnik implements Serializable{
 		this.bioskop = bioskop;
 	}
 
+
+	public Korisnik() {
+		super();
+	}
+
 	@Override
 	public String toString() {
 		return "Korisnik {id=" + id 
