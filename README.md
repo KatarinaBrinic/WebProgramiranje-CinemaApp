@@ -42,6 +42,3 @@ The project is organized into separate components to keep the code maintainable 
 
 ```bash
 git clone https://github.com/KatarinaBrinic/WebProgramiranje-CinemaApp.git
-
-```bash
-git clone https://github.com/KatarinaBrinic/WebProgramiranje-CinemaApp.git
